@@ -1,6 +1,6 @@
-## 🎬 VidFlow (Sugestão) 🎬
+## 🎬 VidFlow 🎬
 
-Este projeto parece ser um clone da interface do YouTube, construído com HTML, CSS e JavaScript, com um back-end que fornece dados de vídeos. 
+Este projeto é um clone da interface do YouTube, construído com HTML, CSS e JavaScript, com um back-end que fornece dados de vídeos. 
 
 ## 💻 Tecnologias Utilizadas:
 
@@ -49,10 +49,34 @@ Imagens utilizadas na interface.
 - `script.js`:  Lógica da aplicação, escrita em JavaScript. 
 
 
-## Próximos Passos 👣
+## Descrição do Projeto
 
-- O README poderia ser enriquecido com uma breve descrição da funcionalidade do projeto, como os recursos implementados (ex: busca de vídeos, reprodução, etc.)
-- Adicionar screenshots da interface seria visualmente atraente e informativo. 
-- Se o projeto possuir um back-end funcional, seria interessante descrever como configurá-lo e executá-lo. 
+Este projeto está presente no curso "JavaScript: consumindo e tratando dados de uma API" da plataforma alura
 
-**Continue explorando e aprimorando seu projeto!** 🚀
+### Desenvolvimento
+
+De começo foi disponibilizado um figma com o modelo final esperado e os modelos CSS prontos, durante o curso foi desenvolvido a estrutura HTML e JS em que se tem uma navegação e uma aba lateral e uma amostragem dos videos presentes no backend
+
+### Funcionalidades
+
+Com o consumo da API com o uso de responses o site é capaz de mostrar os iframes dos videos, junto com o icone do canal e o titulo do video, na barra de pesquisa é possivel pesquisar pelo video e nos botões de categoria os videos são filtrados
+
+## Como usar
+
+Como a API utilizada é uma API Fake feita localmente na maquina é necessário a instalação de nodeJS e a utilização dos seguintes comandos
+
+### Inatalação do JSON Server
+``` bash
+npm install -g json-server@0.17.4
+```
+
+### Criação do Servidor JSON
+``` bash
+json-server --watch backend/videos.json
+```
+
+O endereço retornado como padrão será *http://localhost:3000/videos*, em caso de um outro endereço o mesmo deve ser alterado no carquivo script.js 
+
+```javascript
+const busca = await fetch('endereço__retornado')
+```
