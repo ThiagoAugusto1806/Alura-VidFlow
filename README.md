@@ -65,7 +65,7 @@ Com o consumo da API com o uso de responses o site é capaz de mostrar os iframe
 
 Como a API utilizada é uma API Fake feita localmente na maquina é necessário a instalação de nodeJS e a utilização dos seguintes comandos
 
-### Inatalação do JSON Server
+### Instalação do JSON Server
 ``` bash
 npm install -g json-server@0.17.4
 ```
