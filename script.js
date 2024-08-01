@@ -3,7 +3,7 @@ const containerVideos = document.querySelector('.videos__container')
 
 async function buscarEMostrarVideos(){
     try{
-        const busca = await fetch('https://alura-vid-flow.vercel.app/backend/videos.json')
+        const busca = await fetch('https://alura-vid-flow.vercel.app/backend/videos.json/videos')
         const videos = await busca.json()
         videos.forEach(video => {
             if(video.categoria == ""){
