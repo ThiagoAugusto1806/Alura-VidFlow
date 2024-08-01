@@ -61,6 +61,10 @@ De começo foi disponibilizado um figma com o modelo final esperado e os modelos
 
 Com o consumo da API com o uso de responses o site é capaz de mostrar os iframes dos videos, junto com o icone do canal e o titulo do video, na barra de pesquisa é possivel pesquisar pelo video e nos botões de categoria os videos são filtrados
 
+## Screenshots
+
+<img src="https://imgur.com/g0hyTqW.png" alt="Site VidFlow">
+
 ## Como usar
 
 Como a API utilizada é uma API Fake feita localmente na maquina é necessário a instalação de nodeJS e a utilização dos seguintes comandos
